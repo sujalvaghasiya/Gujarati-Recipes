@@ -1,0 +1,175 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+.pageheading 
+{
+    background-color: rgb(180, 149, 90);
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px 5px 30px;
+    justify-content: space-between;
+    font-size: 20px;
+    display: flex; 
+}
+.menu
+{
+    display: flex; 
+    list-style-type: none;
+}
+.menu a
+{
+
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-family: Copperplate, Papyrus, fantasy;
+    /* border-radius: px; */
+}
+.menu li 
+{
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.menu :hover a
+{
+    background: white;
+    border-radius: 15px;
+    color: green;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+/* --------------------------recipe----------------------------- */
+ .content {
+    background-color: #b9dfda;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+} 
+.heading {
+    padding-top: 20px;
+    margin-top: 15vh;
+    font-size: 2rem;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: center;
+    color: rgb(29, 80, 29);
+    cursor: pointer;
+}
+.content {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 0px 50px 50px 50px;
+}
+.recipe-content {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+}
+.description {
+    padding: 30px 0px 30px 50px;
+    width: 20%;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.description h3 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+.description ul {
+    font-size: 1.5rem;
+}
+.image {
+    width: 65%;
+}
+.image img {
+    width: 800px;
+    border-radius: 30px;
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+}
+.recipe{
+    width: 90%;
+    margin: auto;
+    background: #b9dfda; 
+    border-radius: 10px; 
+    /* padding: 0px 50px 50px 50px; */
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+.head{
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+.head h3{
+    font-size: 2rem;
+    color:  rgb(29, 80, 29);
+    border-bottom: 2px solid black;
+}
+.ingridiants-text{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.ingridiants-text ol{
+    font-size: 1.5rem;
+}
+.ingridiants-text ol h5{
+    font-size: 1.5rem;
+}
+
+.steps{
+    margin: 30px 0px 0px 50px;
+}
+
+.steps ol{
+    font-size: 1.5rem;
+}
+
+
+/* ------------------------footer------------------------ */
+.footer{
+    margin-top: 10vh;
+    background:  rgb(180, 149, 90);
+}
+ 
+ .footer-content{
+     padding: 3vh 0vh 3vh 0vh;
+     color: white;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .footer-contect{
+     font-size: 1.2rem;
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+ 
+ .follow{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     gap: 7px;
+     font-size: 1.2rem;
+     width: 50%;
+ }
+ 
+ .social-link i{
+     font-size: 1.7rem;
+     padding: 0px 10px 0px 10px;
+ }
+ 
+ .copyright{
+     background-color: black;
+     color: white;
+     height: 5vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
