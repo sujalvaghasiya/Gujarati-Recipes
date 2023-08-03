@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;700;900&family=Poppins:wght@400;600;700&display=swap');
-
 *
 {
     margin: 0px;
@@ -9,11 +7,11 @@
 .pageheading 
 {
     background-color: rgb(180, 149, 90);
-    border-radius: 50px;
+    border-radius: 40px; 
     color: white;
-    padding: 10px 20px 5px 30px;
+    padding: 20px 5px 5px 20px;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 15px;
     display: flex; 
 }
 .menu
@@ -67,7 +65,7 @@
 }
 
 .pheading {
-    font-weight: 700;
+    font-weight: 600; 
 }
 
 .heading span {
@@ -76,9 +74,10 @@
     color: rgb(29, 80, 29);
 }
 
-/* .hdeading:hover { 
-    transition: rotet;
+/* .hdeading:hover {
+    transition: rotet
 } */
+
 
 .img {
     width: 50%;
@@ -86,8 +85,8 @@
 
  .img img {
     margin-bottom: 20px;
-    width: 750px;
-    border-radius: 10px; 
+    width: 600px;
+    border-radius: 30px; 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
 } 
 
@@ -102,8 +101,8 @@
 
 /* --------------category---------------- */
 .category-sec {
-    /* border-radius: 50px; */
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 50px 50px 20px 50px;
     width: 80%;
     margin: auto;
@@ -132,8 +131,8 @@
 
 .card {  
     /* background: #DEF5E5; */
-    border-radius: 10px;  
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;  */
+    border-radius: 20px;  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px; 
     width: 250px;
     padding: 20px;
     display: flex;
@@ -237,7 +236,7 @@
     background-color:  #b9dfda;
     margin: auto;
      border-radius: 20px; 
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 0px 50px 20px 50px;
     margin: auto;
     /* background: #DEF5E5; */
@@ -259,7 +258,520 @@
 .c-recipes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 5vh;
 }
+/* -------------------------dropdown------------------- */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 100px;
+    position: fixed;
+    z-index: 10;
+    height: 0px;
+    width: 200px;
+    background: #DEF5E5;
+    /* backdrop-filter: blur(15px); */
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 150px;
+}
+
+.dropdown_menu a{
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* -------------------------Responsive------------------------*/
+
+   /* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
+   /* @media (min-width: 1281px) { */
+    /* code in this block will be applied only if device width>1281 */
+    /* .pageheading
+    {
+        font-size: 10px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+    }
+    .menu a
+    {
+        font-size: 10px;
+    }
+    .navbar .toggle_btn {
+        padding: 10px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+    .navbar
+    {
+        display: flex;
+        width: 100%;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .pageheading
+    {
+        width: 85%;
+    }
+    .toggle_btn i
+    {
+        font-size: 25px;
+    }
+    .head
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 0px;
+    }
+    .heading
+    {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .heading span
+    {
+        font-size: 30px;
+    }
+    .pheading
+    {
+        width: 100%;
+        margin-left: 45px;
+       
+    }
+    .img img
+    {
+        width: 300px;
+        margin-left: 150px;
+    }
+    .category-heading h2
+    {
+        font-size: 25px;
+    }
+    .category
+    {
+        margin-top: 20px;
+    }
+    .footer-content
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .follow
+    {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .social-link 
+    {
+        width: 100%;
+        
+    }
+    .footer
+    {
+        margin-top: 10px;
+    }
+    } */
+
+  /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* code in this block will be applied only if device width>1025 and <1280 */
+    .pageheading
+    {
+        font-size: 10px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+
+
+    }
+    .menu a
+    {
+        font-size: 10px;
+    }
+    .navbar .toggle_btn {
+        padding: 5px;
+        /* margin: auto; */
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+    .navbar
+    {
+        display: flex;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .pageheading
+    {
+        width: 95%;
+    }
+    .toggle_btn i
+    {
+        font-size: 25px;
+    }
+    .head
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 0px;
+    }
+    .heading
+    {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .heading span
+    {
+        font-size: 30px;
+    }
+    .pheading
+    {
+        width: 110%;
+        margin-left: 40px;
+    }
+    .img img
+    {
+        width: 300px;
+        margin-left: 100px;
+    }
+    .category-heading h2
+    {
+        font-size: 25px;
+    }
+    .category
+    {
+        margin-top: 20px;
+    }
+    .footer-content
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .follow
+    {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .social-link 
+    {
+        width: 100%;
+        
+    }
+    .footer
+    {
+        margin-top: 10px;
+    }
+    
+  }
+  
+  /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* code in this block will be applied only if device width>768 and <1024 */
+    .pageheading
+    {
+        font-size: 10px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+    }
+    .menu a
+    {
+        font-size: 10px;
+    }
+    .navbar .toggle_btn {
+        padding: 10px;
+        /* margin: auto; */
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+    .navbar
+    {
+        display: flex;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .pageheading
+    {
+        width: 95%;
+    }
+    .toggle_btn i
+    {
+        font-size: 25px;
+    }
+    .head
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 0px;
+    }
+    .heading
+    {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .heading span
+    {
+        font-size: 30px;
+    }
+    .pheading
+    {
+        width: 110%;
+        margin-left: 40px;
+    }
+    .img img
+    {
+        width: 300px;
+        margin-left: 50px;
+    }
+    .category-heading h2
+    {
+        font-size: 25px;
+    }
+    .category
+    {
+        margin-top: 20px;
+    }
+    .footer-content
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .follow
+    {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .social-link 
+    {
+        width: 100%;
+        
+    }
+    .footer
+    {
+        margin-top: 10px;
+    }
+    
+  }
+  /* ##Device = Low Resolution Tablets,  ##Screen = B/w 481px to 767px */
+  @media (min-width: 481px) and (max-width: 767px) {
+    /* code in this block will be applied only if device width>481 and <767 */
+    .pageheading
+    {
+        font-size: 10px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+    }
+    .menu a
+    {
+        font-size: 10px;
+    }
+    .navbar .toggle_btn {
+        padding: 10px;
+        /* margin: auto; */
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+    .navbar
+    {
+        display: flex;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .pageheading
+    {
+        width: 95%;
+    }
+    .toggle_btn i
+    {
+        font-size: 25px;
+    }
+    .head
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 0px;
+    }
+    .heading
+    {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .heading span
+    {
+        font-size: 30px;
+    }
+    .pheading
+    {
+        width: 150%;
+        margin-left: -46px;
+    }
+    .img img
+    {
+        width: 300px;
+        margin-left: -35px;
+    }
+    .category-heading h2
+    {
+        font-size: 25px;
+    }
+    .category
+    {
+        margin-top: 20px;
+    }
+    .footer-content
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .follow
+    {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .social-link 
+    {
+        width: 100%;
+        
+    }
+    .footer
+    {
+        margin-top: 10px;
+    }
+  }
+  
+  /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */ 
+  @media (min-width: 320px) and (max-width: 480px) {
+    /* code in this block will be applied only if device width>320 and <480 */
+    .pageheading
+    {
+        font-size: 10px;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+    }
+    .menu a
+    {
+        font-size: 10px;
+    }
+    .navbar .toggle_btn {
+        padding: 10px;
+        /* margin: auto; */
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+    .navbar
+    {
+        display: flex;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .pageheading
+    {
+        width: 95%;
+    }
+    .toggle_btn i
+    {
+        font-size: 25px;
+    }
+    .head
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 0px;
+    }
+    .heading
+    {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .heading span
+    {
+        font-size: 30px;
+    }
+    .pheading
+    {
+        width: 150%;
+        margin-left: -43px;
+    }
+    .img img
+    {
+        width: 300px;
+        margin-left: -70px;
+    }
+    .category-heading h2
+    {
+        font-size: 25px;
+    }
+    .category
+    {
+        margin-top: 20px;
+    }
+    .footer-content
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .follow
+    {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .social-link 
+    {
+        width: 100%;
+        
+    }
+    .footer
+    {
+        margin-top: 10px;
+    }
+    
+
+  }
